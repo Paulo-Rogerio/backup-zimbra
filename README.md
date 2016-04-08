@@ -1,29 +1,31 @@
-- Pre-Requisitos.
+Configurar Script Bash para fazer Backup do Servidor Zimbra.
 
 * Armazenamento dos Backups 
 
-Servidor de Arquivos ( Windows ou Linux )
-No servidor de arquivos deve existir um compartilhamento chamado zimbra. 
-Um usuário zimbra no servidor de arquivos com previlégios de escrita no compartilhamento.
+Servidor de Arquivos ( Windows ou Linux ) No servidor de arquivos deve existir um compartilhamento chamado zimbra. Um usuário zimbra no servidor de arquivos com previlégios de escrita no compartilhamento.
 
 * Configurar o Script ( definicoes.sh )
 
-Algumas variáveis de Ambiente que deverá ser ajustada de acordo com a sua estrutura.
-O scritp que deverá ser ajustado é o definicoes.sh
+Algumas variáveis de Ambiente que deverá ser ajustada de acordo com a sua estrutura.O scritp que deverá ser ajustado é o definicoes.sh
 
 Usuário zimbra que autentica no compartilhamento de arquivos, para montar a unidade remota.
+
 USER_SMB="zimbra"
 
 Senha do usuário zimbra no compartilhamento de arquivos.
+
 PASS_SMB="xxxxxx"
 
 Nome completo FQDN do seu servidor Zimbra.
+
 SERVER_HOST="mail.empresa.com.br"
 
 Ip do servidor de arquivos.
+
 SMB_SERVER="172.16.XX.XX"
 
-Nome do compartilhamento que as máquinas enchergam
+Nome do compartilhamento que as máquinas enchergam.
+
 COMPARTILHAMENTO="zimbra"
 
 Nome do usuario ou Grupo de Distribuição que recebem os E-mail 
