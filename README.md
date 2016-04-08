@@ -48,8 +48,9 @@ Ex: Crontab
 Neste script backup.sh , você tem a mobilidade de escolher o que pegar do backup. Caso queira apenas fazer backup das caixas e contas de E-mail, comente as outras entradas e deixe apenas as que são referencia ao seu backup alvo.
 
 Ex:
-# Chama a funcao para backup das contas de usuario.
+
 . ./contas_email.sh
+
 . ./caixas.sh
 
 * Modo de Restauração
