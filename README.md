@@ -12,36 +12,42 @@ Algumas variáveis de Ambiente desse script deverá ser ajustada de acordo com a
 
 <code>USER_SMB="zimbra"</code>
 
-PASS_SMB="xxxxxx"
-SERVER_HOST="mail.empresa.com.br"
-SMB_SERVER="172.16.XX.XX"
-COMPARTILHAMENTO="zimbra"
-PARA="pessoa_que_recebera_notificacao_do_backup@empresa.com.br"
-SUBJECT="Empresa [ Backup Servidor Zimbra - Empresa XXXX ]"
-</code>
+<code>PASS_SMB="xxxxxx"</code>
 
-* Modo de Usar
+<code>SERVER_HOST="mail.empresa.com.br"</code>
 
-Você com certeza irá agendar os seus backups no crontab. Mas qual script será agendado? Sera agenda o ( backup.sh ). Para fins de testes, caso queira roda-lo manualmente basta executar. O script deve ser executado e agendado com usuário ( root )
-#./backup.sh
+<code>SMB_SERVER="172.16.XX.XX"</code>
+
+<code>COMPARTILHAMENTO="zimbra"</code>
+
+<code>PARA="pessoa_que_recebera_notificacao_do_backup@empresa.com.br"</code>
+
+<code>SUBJECT="Empresa [ Backup Servidor Zimbra - Empresa XXXX ]"</code>
+
+<h3>Modo de Usar</h3>
+
+Você com certeza irá agendar os seus backups no crontab. Mas qual script será agendado? 
+O arquivo a ser agendado é o ( backup.sh ). Para fins de testes, caso queira roda-lo manualmente basta executar no seu prompt de comandos. O script deve ser executado e agendado com usuário ( root )
+
+<code>#./backup.sh</code>
 
 Ex: Crontab
 
-30 00 *	* * /opt/scripts/backup.sh
+<code>30 00 *	* * /opt/scripts/backup.sh</code>
 
 Neste script backup.sh , você tem a mobilidade de escolher o que pegar do backup. Caso queira apenas fazer backup das caixas e contas de E-mail, comente as outras entradas e deixe apenas as que são referencia ao seu backup alvo.
 
 Ex:
 
-. ./contas_email.sh
+<code>. ./contas_email.sh</code>
 
-. ./caixas.sh
+<code>. ./caixas.sh</code>
 
-* Modo de Restauração
+<h3>Modo de Restauração</h3>
 
 Para restaurar um Backup ( Uma caixa ), será necessário realizar os seguintes passos.
 
-1-) Criar uma nova conta no zimbra que receberá o backup.
+<li>1-)</li> Criar uma nova conta no zimbra que receberá o backup.
 
 Ex: 
 Suponha que temos uma conta chamado ( paulo@empresa.com.br ) e quero voltar o backup desta conta. Crie uma conta chamado ( paulo.recovery@empresa.com.br )
