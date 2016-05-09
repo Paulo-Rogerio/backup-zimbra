@@ -47,27 +47,27 @@ Ex:
 
 Para restaurar um Backup ( Uma caixa ), será necessário realizar os seguintes passos.
 
-<li>1-)</li> Criar uma nova conta no zimbra que receberá o backup.
+<li>1-) Criar uma nova conta no zimbra que receberá o backup. </li>
 
 Ex: 
 Suponha que temos uma conta chamado ( paulo@empresa.com.br ) e quero voltar o backup desta conta. Crie uma conta chamado ( paulo.recovery@empresa.com.br )
 
 Obs.: Nada impede de voltar um backup em cima de uma conta já existente. Mas fique ciente que esse processo irá sobrepor os E-mail já existente. Faça-o por sua conta e risco. Depois de criado o seu novo E-Mail que receberá o seu backup. Proceda com as instruções:
 
-2-) Editar o arquivo ( recovery.sh )
+<li>2-) Editar o arquivo ( recovery.sh ) </li>
 
 Três variáveis serão necessárias serem alteradas.
 
 Esta é o nome da pasta que contém o backup que deseja restaurar. Ela é criada no momento do Backup e fica armazenda no servidor de arquivos.
 
-DATA_RESTORE="2015-08-21-163342"
+<code>DATA_RESTORE="2015-08-21-163342"</code>
 
 Conta que foi realizado o backup. Observer a estensão ".tgz" . Esse é o backup propriamente dito.
 
-CONTA_ORIGEM="paulo@empresa.com.br.tgz"
+<code>CONTA_ORIGEM="paulo@empresa.com.br.tgz"</code>
 
 Conta à qual será realizado o processo de restauração do backup. O Backup será importado para esta conta.
 
-CONTA_RECOVERY="paulo.recovery@empresa.com.br"
+<code>CONTA_RECOVERY="paulo.recovery@empresa.com.br"</code>
 
 
