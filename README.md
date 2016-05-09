@@ -1,18 +1,17 @@
-H1
 # Objetivo - Backup do Servidor Zimbra.
 
-<h1>Armazenamento dos Backups</h1> 
+<h3>Armazenamento dos Backups</h3> 
 
 Você necessitará de Servidor de Arquivos ( Windows ou Linux ), nesse servidor de arquivos deve existir um compartilhamento chamado zimbra e um usuário zimbra com previlégios de escrita no compartilhamento.
 
-<h1>Configurar o Script</h1> 
+<h3>Configurar o Script</h3> 
 
 <h3> Ajustar o Arquivo de Definições</h3>
 
 Algumas variáveis de Ambiente desse script deverá ser ajustada de acordo com a sua estrutura.
 
-<code>
-USER_SMB="zimbra"</code>
+<code>USER_SMB="zimbra"</code>
+
 PASS_SMB="xxxxxx"
 SERVER_HOST="mail.empresa.com.br"
 SMB_SERVER="172.16.XX.XX"
