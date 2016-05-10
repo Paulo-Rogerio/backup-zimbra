@@ -30,11 +30,11 @@ LOGFILE="/var/log/backup-zimbra.log"
 TIMESTAMP=`date +%Y-%m-%d-%H%M%S`
 #
 # Repositorios no servidor de arquivos
-REPOSITORIO_AGENDAS="$UNIDADE_LOCAL/agendas"
-REPOSITORIO_CONTAS="$UNIDADE_LOCAL/contas"
-REPOSITORIO_CAIXAS="$UNIDADE_LOCAL/caixas"
-REPOSITORIO_ALIASES="$UNIDADE_LOCAL/aliases"
-REPOSITORIO_GG_DISTRIBUICAO="$UNIDADE_LOCAL/gg_distribuicao"
+REPOSITORIO_AGENDAS="${UNIDADE_LOCAL}/agendas"
+REPOSITORIO_CONTAS="${UNIDADE_LOCAL}/contas"
+REPOSITORIO_CAIXAS="${UNIDADE_LOCAL}/caixas"
+REPOSITORIO_ALIASES="${UNIDADE_LOCAL}/aliases"
+REPOSITORIO_GG_DISTRIBUICAO="${UNIDADE_LOCAL}/gg_distribuicao"
 #
 # Notificacao - Email
 SENDMAIL="/opt/zimbra/postfix/sbin/sendmail"
